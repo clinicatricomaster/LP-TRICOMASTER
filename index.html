@@ -264,99 +264,211 @@
             <div id="carousel-results" class="flex overflow-x-auto gap-6 snap-x scrollbar-hide pb-4 scroll-smooth">
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-1-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-1-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-1-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-1-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #420 - Transplante FUE</h4><p class="text-sm text-stone-500">Restauração de Entradas e Linha Frontal.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-2-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-2-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-2-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-2-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #515 - Tratamento Clínico</h4><p class="text-sm text-stone-500">Recuperação de densidade sem cirurgia.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-3-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-3-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-3-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-3-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #890 - Coroa</h4><p class="text-sm text-stone-500">Preenchimento total da região da coroa.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-4-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-4-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-4-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-4-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #112 - Feminino</h4><p class="text-sm text-stone-500">Densificação difusa (Long Hair FUE).</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-5-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-5-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-5-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-5-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #335 - Reparadora</h4><p class="text-sm text-stone-500">Correção de cicatriz e transplante prévio.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-6-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-6-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-6-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-6-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #998 - Barba</h4><p class="text-sm text-stone-500">Definição de contorno e volume facial.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-7-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-7-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-7-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-7-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #7 - Novo</h4><p class="text-sm text-stone-500">Descrição do Caso.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-8-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-8-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-8-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-8-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #8 - Novo</h4><p class="text-sm text-stone-500">Descrição do Caso.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-9-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-9-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-9-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-9-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #9 - Novo</h4><p class="text-sm text-stone-500">Descrição do Caso.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-10-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-10-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-10-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-10-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #10 - Novo</h4><p class="text-sm text-stone-500">Descrição do Caso.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-11-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-11-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-11-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-11-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #11 - Novo</h4><p class="text-sm text-stone-500">Descrição do Caso.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-12-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-12-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-12-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-12-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #12 - Novo</h4><p class="text-sm text-stone-500">Descrição do Caso.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-13-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-13-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-13-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-13-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #13 - Novo</h4><p class="text-sm text-stone-500">Descrição do Caso.</p></div>
                 </div>
                 <div class="snap-center shrink-0 w-[90vw] md:w-[600px] bg-stone-50 rounded-sm border border-stone-100 p-4">
                     <div class="flex flex-col md:flex-row gap-2 h-auto md:h-[300px]">
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-14-antes" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div></div>
-                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden"><img id="res-14-depois" src="" class="w-full h-full object-cover rounded-sm"><div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div></div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-14-antes" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-black/60 text-white text-xs px-2 py-1 rounded">ANTES</div>
+                        </div>
+                        <div class="w-full md:w-1/2 h-[250px] md:h-full relative group overflow-hidden cursor-zoom-in" onclick="abrirModalImagem(this.querySelector('img').src)">
+                            <img id="res-14-depois" src="" class="w-full h-full object-cover rounded-sm transition duration-500 group-hover:scale-105">
+                            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition flex items-center justify-center opacity-0 group-hover:opacity-100"><i class="ph-fill ph-magnifying-glass-plus text-white text-3xl drop-shadow-md"></i></div>
+                            <div class="absolute bottom-2 left-2 bg-tricoGold text-tricoDark font-bold text-xs px-2 py-1 rounded">DEPOIS</div>
+                        </div>
                     </div>
                     <div class="mt-4"><h4 class="font-serif font-bold text-tricoDark">Caso #14 - Novo</h4><p class="text-sm text-stone-500">Descrição do Caso.</p></div>
                 </div>
@@ -490,6 +602,11 @@
         </div>
     </div>
 
+    <div id="modalImagem" class="fixed inset-0 z-[110] hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4 animate-[sweep_0.2s_ease-out]" onclick="fecharModalImagem()">
+        <button class="absolute top-6 right-6 text-white text-4xl hover:text-tricoGold transition z-50"><i class="ph-bold ph-x"></i></button>
+        <img id="img-zoom" src="" class="max-w-full max-h-[90vh] object-contain rounded-sm shadow-2xl">
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             if (typeof siteConfig === 'undefined') {
@@ -569,7 +686,6 @@
             const titulo = document.getElementById('modal-titulo');
             const desc = document.getElementById('modal-desc');
 
-            // Pega dados do siteConfig
             const imgSrc = siteConfig[`tratamento${id}`];
             const descTxt = siteConfig[`desc_tratamento${id}`] || "Descrição não disponível.";
             
@@ -582,6 +698,18 @@
 
         function fecharModalTratamento() {
             document.getElementById('modalTratamento').classList.add('hidden');
+        }
+
+        // LÓGICA DO MODAL DE IMAGEM (ZOOM) - NOVO
+        function abrirModalImagem(src) {
+            const modal = document.getElementById('modalImagem');
+            const img = document.getElementById('img-zoom');
+            img.src = src;
+            modal.classList.remove('hidden');
+        }
+
+        function fecharModalImagem() {
+            document.getElementById('modalImagem').classList.add('hidden');
         }
 
         // Outras Funções
