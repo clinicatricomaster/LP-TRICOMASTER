@@ -3,8 +3,8 @@ const siteConfig = {
     whatsapp: "5511930731230", 
     instagram: "@tricomaster",
 
-    // VÍDEO INSTITUCIONAL
-    videoInstitucional: "https://www.youtube.com/embed/SEU_VIDEO_AQUI", 
+    // VÍDEO INSTITUCIONAL (Link Corrigido)
+    videoInstitucional: "https://www.youtube.com/embed/GcaNpCSQiYE",
 
     // 2. IMAGENS GERAIS
     logo: "img/logo.png", 
