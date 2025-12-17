@@ -42,12 +42,25 @@
         details > summary { list-style: none; }
         details > summary::-webkit-details-marker { display: none; }
         details[open] summary ~ * { animation: sweep .3s ease-in-out; }
+        
+        /* 1. ANIMAÇÃO PARA O MODAL DE TRATAMENTOS (Mantém o translate para centralizar) */
+        @keyframes zoomInCenter { 
+            0% {opacity: 0; transform: translate(-50%, -50%) scale(0.8);} 
+            100% {opacity: 1; transform: translate(-50%, -50%) scale(1);} 
+        }
+
+        /* 2. ANIMAÇÃO PARA A IMAGEM ANTES/DEPOIS (Apenas Scale, sem mover lateralmente) */
+        @keyframes zoomSimple { 
+            0% {opacity: 0; transform: scale(0.8);} 
+            100% {opacity: 1; transform: scale(1);} 
+        }
+
         @keyframes sweep { 0% {opacity: 0; transform: translateY(-10px)} 100% {opacity: 1; transform: translateY(0)} }
     </style>
 </head>
 <body class="bg-tricoBeige text-stone-800 antialiased font-sans">
 
-    <div id="mobileMenu" class="fixed inset-0 bg-tricoDark/98 z-[60] flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-300">
+    <div id="mobileMenu" class="fixed inset-0 bg-tricoDark z-[9999] flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-300">
         <button onclick="toggleMenu()" class="absolute top-6 right-6 text-white text-4xl hover:text-tricoGold transition"><i class="ph ph-x"></i></button>
         <div class="text-tricoGold text-sm font-bold uppercase tracking-widest mb-4">Menu Principal</div>
         <a href="#agendamento" onclick="toggleMenu()" class="text-3xl text-white font-serif hover:text-tricoGold transition">Agendar Consulta</a>
@@ -112,7 +125,7 @@
             <p class="text-stone-400 mb-10 text-lg">Uma introdução especial da <span class="text-tricoGold font-bold">Dra. Lucien Pisanelli</span>.</p>
             
             <div class="relative w-full aspect-video rounded-sm overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 group">
-                <iframe id="video-institucional" class="w-full h-full" src="" title="Vídeo Institucional TricoMaster" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="video-institucional" class="w-full h-full" src="" title="Vídeo Institucional TricoMaster" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 <div id="video-placeholder" class="absolute inset-0 bg-stone-900 flex items-center justify-center -z-10">
                     <p class="text-stone-500 text-sm">Carregando vídeo...</p>
                 </div>
@@ -515,6 +528,36 @@
                     <p class="text-stone-300 italic mb-6 leading-relaxed">"Minha imagem é meu trabalho. O desenho da linha frontal ficou perfeito, imperceptível em câmera HD. Recomendo de olhos fechados."</p>
                     <div><p class="font-bold text-white">Felipe B.</p><p class="text-xs text-tricoGold uppercase">Restauração Frontal</p></div>
                 </div>
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white/5 border border-white/10 p-8 rounded-sm relative">
+                    <i class="ph-fill ph-quotes text-4xl text-tricoGold/20 absolute top-4 right-4"></i>
+                    <div class="flex text-tricoGold mb-4 text-sm gap-1"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                    <p class="text-stone-300 italic mb-6 leading-relaxed">"A recuperação foi muito mais rápida do que imaginei. Sem dor, sem inchaço exagerado. Em uma semana eu já estava com a vida normal."</p>
+                    <div><p class="font-bold text-white">Roberto T.</p><p class="text-xs text-tricoGold uppercase">Pós-Operatório</p></div>
+                </div>
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white/5 border border-white/10 p-8 rounded-sm relative">
+                    <i class="ph-fill ph-quotes text-4xl text-tricoGold/20 absolute top-4 right-4"></i>
+                    <div class="flex text-tricoGold mb-4 text-sm gap-1"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                    <p class="text-stone-300 italic mb-6 leading-relaxed">"Cheguei desesperada com uma queda aguda pós-parto. O tratamento injetável parou a queda em 30 dias. Foi um alívio enorme."</p>
+                    <div><p class="font-bold text-white">Julia V.</p><p class="text-xs text-tricoGold uppercase">Eflúvio Telógeno</p></div>
+                </div>
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white/5 border border-white/10 p-8 rounded-sm relative">
+                    <i class="ph-fill ph-quotes text-4xl text-tricoGold/20 absolute top-4 right-4"></i>
+                    <div class="flex text-tricoGold mb-4 text-sm gap-1"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                    <p class="text-stone-300 italic mb-6 leading-relaxed">"Não mudou apenas meu cabelo, mudou minha postura na vida. A segurança que recuperei vale cada centavo do investimento."</p>
+                    <div><p class="font-bold text-white">Eduardo F.</p><p class="text-xs text-tricoGold uppercase">Transplante Coroa</p></div>
+                </div>
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white/5 border border-white/10 p-8 rounded-sm relative">
+                    <i class="ph-fill ph-quotes text-4xl text-tricoGold/20 absolute top-4 right-4"></i>
+                    <div class="flex text-tricoGold mb-4 text-sm gap-1"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                    <p class="text-stone-300 italic mb-6 leading-relaxed">"O atendimento do concierge é impecável. Cuidaram de tudo, do hotel ao transporte. Me senti acolhida e VIP o tempo todo."</p>
+                    <div><p class="font-bold text-white">Patricia G.</p><p class="text-xs text-tricoGold uppercase">Paciente de Fora (RJ)</p></div>
+                </div>
+                <div class="snap-center shrink-0 w-[85vw] md:w-[400px] bg-white/5 border border-white/10 p-8 rounded-sm relative">
+                    <i class="ph-fill ph-quotes text-4xl text-tricoGold/20 absolute top-4 right-4"></i>
+                    <div class="flex text-tricoGold mb-4 text-sm gap-1"><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+                    <p class="text-stone-300 italic mb-6 leading-relaxed">"Faço minha manutenção anual há 4 anos. Meu cabelo hoje está melhor do que quando tinha 30 anos. A constância é o segredo."</p>
+                    <div><p class="font-bold text-white">Gustavo R.</p><p class="text-xs text-tricoGold uppercase">Manutenção Clínica</p></div>
+                </div>
             </div>
             
             <div class="flex justify-center gap-4 mt-8">
@@ -587,7 +630,7 @@
 
     <div id="modalTratamento" class="fixed inset-0 z-[100] hidden">
         <div class="absolute inset-0 bg-black/90 backdrop-blur-sm transition-opacity" onclick="fecharModalTratamento()"></div>
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90vw] md:w-[600px] bg-white rounded-sm shadow-2xl overflow-hidden flex flex-col animate-[sweep_0.3s_ease-out]">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90vw] md:w-[600px] bg-white rounded-sm shadow-2xl overflow-hidden flex flex-col animate-[zoomInCenter_0.25s_ease-out]">
             <div class="relative h-64 bg-stone-200">
                 <img id="modal-img" src="" class="w-full h-full object-cover">
                 <button onclick="fecharModalTratamento()" class="absolute top-4 right-4 bg-white/20 hover:bg-white text-white hover:text-tricoDark rounded-full p-2 transition"><i class="ph-bold ph-x text-xl"></i></button>
@@ -602,9 +645,9 @@
         </div>
     </div>
 
-    <div id="modalImagem" class="fixed inset-0 z-[110] hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4 animate-[sweep_0.2s_ease-out]" onclick="fecharModalImagem()">
+    <div id="modalImagem" class="fixed inset-0 z-[110] hidden bg-black/95 backdrop-blur-md flex items-center justify-center p-4" onclick="fecharModalImagem()">
         <button class="absolute top-6 right-6 text-white text-4xl hover:text-tricoGold transition z-50"><i class="ph-bold ph-x"></i></button>
-        <img id="img-zoom" src="" class="max-w-full max-h-[90vh] object-contain rounded-sm shadow-2xl">
+        <img id="img-zoom" src="" class="max-w-full max-h-[90vh] object-contain rounded-sm shadow-2xl animate-[zoomSimple_0.3s_ease-out]">
     </div>
 
     <script>
@@ -700,7 +743,7 @@
             document.getElementById('modalTratamento').classList.add('hidden');
         }
 
-        // LÓGICA DO MODAL DE IMAGEM (ZOOM) - NOVO
+        // LÓGICA DO MODAL DE IMAGEM (ZOOM)
         function abrirModalImagem(src) {
             const modal = document.getElementById('modalImagem');
             const img = document.getElementById('img-zoom');
